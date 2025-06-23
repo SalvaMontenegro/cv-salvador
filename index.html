@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salvador Montenegro - CV</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      color: #333;
+      scroll-behavior: smooth;
     }
     header {
-      background: #222;
+      background-color: #1e1e2f;
       color: white;
-      padding: 40px 20px;
+      padding: 60px 0;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
     }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #007acc;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-    .job, .education, .project {
-      margin-bottom: 20px;
+      padding: 60px 20px;
     }
     footer {
-      background: #222;
+      background-color: #1e1e2f;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+    .nav-link {
+      color: white !important;
     }
-    a:hover {
+    .nav-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Salvador Montenegro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <header>
-  <h1>Salvador Montenegro</h1>
-  <p>Licenciado en Ciencia de la Computación - 24 años - Buenos Aires, Argentina</p>
+  <div class="container">
+    <h1>Salvador Montenegro</h1>
+    <p>Licenciado en Ciencia de la Computación - 24 años - Buenos Aires</p>
+  </div>
 </header>
 
-<section>
-  <h2>Sobre mí</h2>
-  <p>Soy un profesional de 24 años apasionado por la Ciencia de la Computación. Tengo experiencia en desarrollo backend, análisis de datos y automatización de procesos. Me interesan especialmente la inteligencia artificial, la ciberseguridad y el diseño de sistemas eficientes y escalables.</p>
-</section>
-
-<section>
-  <h2>Experiencia Laboral</h2>
-  <div class="job">
-    <strong>Desarrollador Backend - DataNova Tech</strong><br>
-    <em>2022 - Actualidad</em><br>
-    Diseño y mantenimiento de APIs REST con Python (FastAPI), PostgreSQL y Docker. Automatización de pipelines de datos.
-  </div>
-  <div class="job">
-    <strong>Asistente de Investigación - Universidad Nacional de Buenos Aires</strong><br>
-    <em>2020 - 2022</em><br>
-    Desarrollo de modelos predictivos usando Python y Scikit-learn. Participación en papers académicos sobre IA aplicada a educación.
+<section id="about" data-aos="fade-up">
+  <div class="container">
+    <h2>Sobre mí</h2>
+    <p>Soy un profesional de 24 años apasionado por la Ciencia de la Computación. Tengo experiencia en desarrollo backend, análisis de datos y automatización de procesos. Me interesan especialmente la inteligencia artificial, la ciberseguridad y el diseño de sistemas eficientes y escalables.</p>
   </div>
 </section>
 
-<section>
-  <h2>Educación</h2>
-  <div class="education">
-    <strong>Licenciatura en Ciencia de la Computación</strong><br>
-    Universidad Nacional de Buenos Aires (2017 - 2022)
+<section id="experience" data-aos="fade-right">
+  <div class="container">
+    <h2>Experiencia Laboral</h2>
+    <div class="mb-4">
+      <h5>Desarrollador Backend - DataNova Tech (2022 - Actualidad)</h5>
+      <p>Diseño y mantenimiento de APIs REST con Python (FastAPI), PostgreSQL y Docker. Automatización de pipelines de datos.</p>
+    </div>
+    <div>
+      <h5>Asistente de Investigación - Universidad Nacional de Buenos Aires (2020 - 2022)</h5>
+      <p>Desarrollo de modelos predictivos usando Python y Scikit-learn. Participación en papers académicos sobre IA aplicada a educación.</p>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Proyectos Destacados</h2>
-  <div class="project">
-    <strong>"SafeNet" - Detección de vulnerabilidades en red</strong><br>
-    Sistema de escaneo de redes locales para identificar puertos expuestos y servicios mal configurados. Usé Nmap, Python y MongoDB.
-  </div>
-  <div class="project">
-    <strong>"EduPredict" - IA para prever abandono escolar</strong><br>
-    Modelo de machine learning entrenado con datos reales para predecir deserción estudiantil en escuelas secundarias.
+<section id="projects" data-aos="fade-left">
+  <div class="container">
+    <h2>Proyectos Destacados</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">SafeNet</h5>
+        <p class="card-text">Sistema de escaneo de redes locales para identificar puertos expuestos y servicios mal configurados. Usé Nmap, Python y MongoDB.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">EduPredict</h5>
+        <p class="card-text">Modelo de machine learning entrenado con datos reales para predecir deserción estudiantil en escuelas secundarias.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Habilidades Técnicas</h2>
-  <ul>
-    <li>Python, Java, SQL</li>
-    <li>Docker, Git, Linux</li>
-    <li>Scikit-learn, Pandas, NumPy</li>
-    <li>Diseño de APIs REST</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contacto</h2>
-  <p>Email: <a href="mailto:salva.montenegro08@gmail.com">salva.montenegro08@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/salvadormontenegro">github.com/salvadormontenegro</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/salvadormontenegro">linkedin.com/in/salvadormontenegro</a></p>
+<section id="contact" data-aos="fade-up">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:salva.montenegro08@gmail.com">salva.montenegro08@gmail.com</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/salvadormontenegro" target="_blank">github.com/salvadormontenegro</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/salvadormontenegro" target="_blank">linkedin.com/in/salvadormontenegro</a></p>
+  </div>
 </section>
 
 <footer>
   <p>&copy; 2025 Salvador Montenegro</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
